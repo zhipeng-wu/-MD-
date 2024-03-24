@@ -88,5 +88,5 @@ vue3 响应式 使用的是proxy  好处是能支持对象和数组，不用一�
 
 ```
 
-![image-20231115204146512](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231115204146512.png)
+![image-20231115204146512](images/image-20231115204146512.png)
 

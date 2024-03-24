@@ -36,7 +36,7 @@ JavaScript + SWC
    swc与babel还是有一定的差距，如果有兼容性要求很严格的项目还是不要轻易尝试了，但是如果只需要兼容最近的主流浏览器也是基本没问题的。
 ```
 
-![image-20231119113854522](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119113854522.png)
+![image-20231119113854522](images/image-20231119113854522.png)
 
 + strictModel 严格模式
 
@@ -216,7 +216,7 @@ function App() {
 页面渲染跟之前一样
 ```
 
-![image-20231119163336940](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119163336940.png)
+![image-20231119163336940](images/image-20231119163336940.png)
 
 ##  7.组件传值设置默认值的方式
 
@@ -323,7 +323,7 @@ function App() {
 
 ```
 
-![image-20231119171548179](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119171548179.png)
+![image-20231119171548179](images/image-20231119171548179.png)
 
 ## 10. 组件的状态和useState
 
@@ -393,7 +393,7 @@ function App() {
 
 ```
 
-![image-20231119175621074](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119175621074.png)
+![image-20231119175621074](images/image-20231119175621074.png)
 
 ## 12.状态队列和自动批处理
 
@@ -427,7 +427,7 @@ function App() {
 一共调用了4次setCount  , 页面值重新渲染2次 ，第一次 同步的3个setCount，第二次是异步调用 setCount 自动批处理
 ```
 
-![image-20231119181247875](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119181247875.png)
+![image-20231119181247875](images/image-20231119181247875.png)
 
 ```
 setCount 回调函数的写法 和 count+1 写法的区别
@@ -465,7 +465,7 @@ function App() {
 
 ```
 
-![image-20231119182546381](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119182546381.png)
+![image-20231119182546381](images/image-20231119182546381.png)
 
 
 
@@ -473,7 +473,7 @@ function App() {
 
 ###  对数组和对象的操作需要注意事项
 
-![image-20231119194824992](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119194824992.png)
+![image-20231119194824992](images/image-20231119194824992.png)
 
 ```
 # 数组的常用操作
@@ -677,7 +677,7 @@ export default App
  
  ```
 
-![image-20231119210815103](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119210815103.png)
+![image-20231119210815103](images/image-20231119210815103.png)
 
 ```
 #所谓的状态提升就是取了个高大上的名字， 说白了就是父组件分发 属性和事件
@@ -744,7 +744,7 @@ function App() {
 
 ```
 
-![image-20231119212642446](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119212642446.png)
+![image-20231119212642446](images/image-20231119212642446.png)
 
 ```
 # 第二种情况
@@ -785,7 +785,7 @@ function App() {
 <MyButton style ={{ border:'1px solid red'}} key="aa"/> : <MyButton key="bb"/>
 ```
 
-![image-20231119213455092](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119213455092.png)
+![image-20231119213455092](images/image-20231119213455092.png)
 
 ![image-20231119213502864](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119213502864.png)
 
@@ -810,7 +810,7 @@ function App() {
 }
 ```
 
-![image-20231119214637620](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119214637620.png)
+![image-20231119214637620](images/image-20231119214637620.png)
 
 ## 18 受控组件与 非受控组件
 
@@ -912,7 +912,7 @@ function App() {
 
 ### 19.2useRef 和 useState 的区别
 
-![image-20231119222732819](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231119222732819.png)
+![image-20231119222732819](images/image-20231119222732819.png)
 
 ### 19.3ref 转发
 
@@ -1010,7 +1010,7 @@ function App() {
 }
 ```
 
-![image-20231120143509331](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231120143509331.png)
+![image-20231120143509331](images/image-20231120143509331.png)
 
 ## 20 useEffect
 
@@ -1085,7 +1085,7 @@ function App() {
 说明组件jsx 渲染完后才触发 useEffect, 每次更新都会触发。
 ```
 
-![image-20231120151236982](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231120151236982.png)
+![image-20231120151236982](images/image-20231120151236982.png)
 
 ### useEffect 依赖项控制effect 是否执行
 
@@ -1252,7 +1252,7 @@ function App() {
 
 
 
-![image-20231120220635292](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231120220635292.png)
+![image-20231120220635292](images/image-20231120220635292.png)
 
 ```
 省略相同代码， 重点看useEffect
@@ -1329,7 +1329,7 @@ function App() {
 
  但为了追求更优秀的代码组织架构，可以使用useReducer
 
-![image-20231121164801112](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231121164801112.png)
+![image-20231121164801112](images/image-20231121164801112.png)
 
 ```
 # useReducer 使用方式
@@ -1609,7 +1609,7 @@ function App() {
 
 ```
 
-![image-20231122210735672](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231122210735672.png)
+![image-20231122210735672](images/image-20231122210735672.png)
 
 ## 25 errorboundary（错误边界）
 
@@ -1642,7 +1642,7 @@ function ChildrenCom(){
 
 ```
 
-![image-20231122205311594](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231122205311594.png)
+![image-20231122205311594](images/image-20231122205311594.png)
 
 ## 26 懒加载组件 lazy,Suspense
 
@@ -1656,7 +1656,7 @@ function ChildrenCom(){
 
 如图需求，根据用户的输入，把关键字标记为红色
 
-![image-20231130215909092](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231130215909092.png)
+![image-20231130215909092](images/image-20231130215909092.png)
 
 ```
 以下 代码中  setValue(e.target.value)    setQuery(e.target.value)  //这两个默认都是紧急任务

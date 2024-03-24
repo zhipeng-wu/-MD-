@@ -40,11 +40,11 @@ let createdBoolean: Boolean = new Boolean(1)    #这样写正确
 小写的是基元类型， 而大写的是包装对象。 一般也没人用大写定义
 ```
 
-![image-20231205191806480](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205191806480.png)
+![image-20231205191806480](images/image-20231205191806480.png)
 
 
 
-![image-20231205191448403](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205191448403.png)
+![image-20231205191448403](images/image-20231205191448403.png)
 
 + void 空值类型 一般用于定义没有返回值的 函数
 
@@ -62,7 +62,7 @@ let n:void = null 报错
 
 注意严格模式下 
 
-![image-20231205192149061](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205192149061.png)
+![image-20231205192149061](images/image-20231205192149061.png)
 
 + null 和 undefind 类型
 
@@ -148,9 +148,9 @@ an = b
 **Object  object {}  三者的区别**
 
 + Object 和 { } 都不能添加新属性，也访问不到属性
-+ ![image-20231205205038934](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205205038934.png)
++ ![image-20231205205038934](images/image-20231205205038934.png)
 
-![image-20231205204808864](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205204808864.png)
+![image-20231205204808864](images/image-20231205204808864.png)
 
 ## Interface  接口 类型约束
 
@@ -342,7 +342,7 @@ queryUserInfor({id:11,pwd:"dsf",idCard:"xxxx",age:33})
 
 
 
-![image-20231205223933926](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205223933926.png)
+![image-20231205223933926](images/image-20231205223933926.png)
 
 ```javascript
 #断言写法  （ str as string ）   ( <string> str )
@@ -379,11 +379,11 @@ JS 是由三部分组成的
    let div:HTMLDivElement  = document.querySelector("div")
    ```
 
-   ![image-20231205225738292](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205225738292.png)
+   ![image-20231205225738292](images/image-20231205225738292.png)
 
 + BOM  鼠标移动上去就能查看到对应类型， 其实就是接口
 
-![image-20231205230735486](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205230735486.png)
+![image-20231205230735486](images/image-20231205230735486.png)
 
 + Promise<T>   这个类型接收一个泛型参数， resove返回什么类型，前面就要写什么类型。  后续 .then( res )  res就会有相应类型的方法提示
 

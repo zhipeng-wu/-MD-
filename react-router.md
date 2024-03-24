@@ -2,7 +2,7 @@
 
 1. 目录结构
 
-   ![image-20231202135003823](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231202135003823.png)
+   ![image-20231202135003823](images/image-20231202135003823.png)
 
 ```
 第一步 新建router/index.js 配置baseRouter
@@ -61,7 +61,7 @@ function App() {
 export default App
 ```
 
-![image-20231202143853423](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231202143853423.png)
+![image-20231202143853423](images/image-20231202143853423.png)
 
 ## react 18 新的router 写法
 

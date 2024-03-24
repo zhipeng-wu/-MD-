@@ -132,7 +132,7 @@ export default App
 
 ### react-redux的两个重要组成
 
-![image-20231201234416539](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231201234416539.png)
+![image-20231201234416539](images/image-20231201234416539.png)
 
 ### react-redux 使用
 
@@ -325,7 +325,7 @@ export const reducer = (state=initState,action) =>{
 
 
 
-![image-20231203141153582](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203141153582.png)
+![image-20231203141153582](images/image-20231203141153582.png)
 
 
 
@@ -383,7 +383,7 @@ const store =legacy_createStore(reducer,
 
 redux 天生是不支持异步的
 
-![image-20231203142240102](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203142240102.png)
+![image-20231203142240102](images/image-20231203142240102.png)
 
 
 
@@ -436,7 +436,7 @@ export default store;
 
 
 
-![image-20231203160507105](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203160507105.png)
+![image-20231203160507105](images/image-20231203160507105.png)
 
 
 
@@ -462,21 +462,21 @@ saga 的辅助函数   只要dispatch 发送了action,都能被saga中间件监�
 
    
 
-![image-20231203165703510](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203165703510.png)
+![image-20231203165703510](images/image-20231203165703510.png)
 
 
 
-![image-20231203165725321](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203165725321.png)
+![image-20231203165725321](images/image-20231203165725321.png)
 
 
 
 + **select()**    相当于store.getSate()  可以获取到state ， 不带参数可以获取到所有state
 
-   ![image-20231203170601272](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203170601272.png)
+   ![image-20231203170601272](images/image-20231203170601272.png)
 
 
 
-![image-20231203170630139](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203170630139.png)
+![image-20231203170630139](images/image-20231203170630139.png)
 
 + put 发送action
 
@@ -556,9 +556,9 @@ saga 的辅助函数   只要dispatch 发送了action,都能被saga中间件监�
    }
    ```
 
-   ![image-20231203231135196](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203231135196.png)
+   ![image-20231203231135196](images/image-20231203231135196.png)
 
-​	![image-20231203231251299](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231203231251299.png)
+​	![image-20231203231251299](images/image-20231203231251299.png)
 
 
 
@@ -578,7 +578,7 @@ saga 的辅助函数   只要dispatch 发送了action,都能被saga中间件监�
 
    
 
-![image-20231204005158817](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231204005158817.png)
+![image-20231204005158817](images/image-20231204005158817.png)
 
 Mobx 优点 简单易上手， 面向对象编程， 对TS友好 。
 
@@ -708,4 +708,4 @@ export default MobxCom;
 
  参考 官网 <https://www.mobxjs.com/api>
 
-![image-20231205174056473](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231205174056473.png)
+![image-20231205174056473](images/image-20231205174056473.png)

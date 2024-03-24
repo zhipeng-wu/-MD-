@@ -75,4 +75,4 @@
 
 nextjs中 有页面即 路由的概念   ，会根据pages目录下的结构自动生成路由
 
-![image-20231213203731970](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231213203731970.png)
+![image-20231213203731970](images/image-20231213203731970.png)

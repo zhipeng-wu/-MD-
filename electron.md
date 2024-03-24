@@ -10,7 +10,7 @@
 
 可以通过前端技术实现桌面安装应用。 主要由Chromium + nodejs组成。 一下是electron架构图
 
-![image-20231111140731545](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231111140731545.png)
+![image-20231111140731545](images/image-20231111140731545.png)
 
 ##  搭建electron 项目
 
@@ -71,7 +71,7 @@
 #  参考网址  <https://blog.csdn.net/qq_19991931/article/details/130429607>
 ```
 
-![image-20231112005808407](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112005808407.png)
+![image-20231112005808407](images/image-20231112005808407.png)
 
 ```
 2. 安装  yarn add -D electron electron-builder  
@@ -83,14 +83,14 @@
 
 ```
 
-![image-20231112010115655](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112010115655.png)
+![image-20231112010115655](images/image-20231112010115655.png)
 
 ```
 4. 配置完成以后分别启动yarn dev 和 yarn start，出现以下窗口表示搭建成功了。
 
 ```
 
-![image-20231112011125995](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112011125995.png)
+![image-20231112011125995](images/image-20231112011125995.png)
 
 ```
 5 .优化 😆 😁 😉
@@ -125,7 +125,7 @@ Get "https://github.com/electron/electron/releases/download/v27.0.4/electron-v27
 
 
 
-![image-20231112023717066](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112023717066.png)
+![image-20231112023717066](images/image-20231112023717066.png)
 
 
 
@@ -135,13 +135,13 @@ Get "https://github.com/electron/electron/releases/download/v27.0.4/electron-v27
       electron-v27.0.4-win32-x64  这个三个都需要
 ```
 
-![image-20231112024112271](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112024112271.png)
+![image-20231112024112271](images/image-20231112024112271.png)
 
 
 
-​		![image-20231112023912116](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112023912116.png)
+​		![image-20231112023912116](images/image-20231112023912116.png)
 
-![image-20231112020850709](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112020850709.png)
+![image-20231112020850709](images/image-20231112020850709.png)
 
 
 
@@ -153,7 +153,7 @@ X Get "https://github.com/electron-userland/electron-builder-binaries/releases/d
 
 ```
 
-![image-20231112024353020](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112024353020.png)
+![image-20231112024353020](images/image-20231112024353020.png)
 
 
 
@@ -164,7 +164,7 @@ X Get "https://github.com/electron-userland/electron-builder-binaries/releases/d
 
 ```
 
-![image-20231112025450279](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112025450279.png)
+![image-20231112025450279](images/image-20231112025450279.png)
 
 
 
@@ -264,7 +264,7 @@ X Get "https://github.com/electron-userland/electron-builder-binaries/releases/d
 
 ## 最后打包成功
 
-![image-20231112024543629](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112024543629.png)
+![image-20231112024543629](images/image-20231112024543629.png)
 
 
 
@@ -283,13 +283,13 @@ mainWindow.loadFile(path.join(__dirname, 'index.html'));   加载render process
 进程是计算机分配资源的基础单位
 ```
 
-![image-20231111160653632](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231111160653632.png)
+![image-20231111160653632](images/image-20231111160653632.png)
 
 
 
 ## electron中内置的主进程模块 和 渲染进程模块
 
-![image-20231112124800754](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231112124800754.png)
+![image-20231112124800754](images/image-20231112124800754.png)
 
 **具体模块的 事件， 参考官网docs**
 

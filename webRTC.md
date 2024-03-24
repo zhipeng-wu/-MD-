@@ -18,7 +18,7 @@ webRTC是一个百宝箱，传输、音视频处理（回音、降噪等）
 
 ## webRTC 架构
 
-![image-20231114221213127](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231114221213127.png)
+![image-20231114221213127](images/image-20231114221213127.png)
 
 ​		分成设计。 核心层顶部是 c++的api  peerConnedion  端与端的连接实现
 
@@ -34,17 +34,17 @@ webRTC是一个百宝箱，传输、音视频处理（回音、降噪等）
 
 ##  webRTC的目录结构
 
-![image-20231114222621134](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231114222621134.png)
+![image-20231114222621134](images/image-20231114222621134.png)
 
-![image-20231114223214939](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231114223214939.png)
+![image-20231114223214939](images/image-20231114223214939.png)
 
 
 
 ## module 下的子目录
 
-![image-20231114223634428](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231114223634428.png)
+![image-20231114223634428](images/image-20231114223634428.png)
 
-![image-20231114223743360](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231114223743360.png)
+![image-20231114223743360](images/image-20231114223743360.png)
 
 ## 获取电脑上音视频设备
 
@@ -58,4 +58,4 @@ let ePromise =navigator.enumerateDevices.enumerateDevices();
 
 
 
-![image-20231114233739767](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231114233739767.png)
+![image-20231114233739767](images/image-20231114233739767.png)

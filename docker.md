@@ -18,7 +18,7 @@
 
 传统的VMware技术 如图
 
-![image-20231105121455861](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105121455861.png)
+![image-20231105121455861](images/image-20231105121455861.png)
 
 传统的虚拟机技术，是完全模拟一整套的电脑设备，(Kernel 内核， lib运行环境，硬件)。 一个虚拟机基本在几个G.
 
@@ -34,7 +34,7 @@
 
 docker也是一种虚拟技术 如图
 
-![image-20231105122047207](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105122047207.png)
+![image-20231105122047207](images/image-20231105122047207.png)
 
 优点：
 
@@ -48,7 +48,7 @@ docker也是一种虚拟技术 如图
 
 docker架构图
 
-![image-20231105123458094](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105123458094.png)
+![image-20231105123458094](images/image-20231105123458094.png)
 
 镜像(image)    
 
@@ -134,7 +134,7 @@ Server: Docker Engine - Community
 7.测试docker   docker run hello-world
 ```
 
-![image-20231105143243360](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105143243360.png)
+![image-20231105143243360](images/image-20231105143243360.png)
 
 ```
 1.如果没有这个镜像，先find 去查找这个镜像
@@ -144,7 +144,7 @@ Server: Docker Engine - Community
 
 **docker images** 可以查看到镜像 hello-world
 
-![image-20231105143523783](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105143523783.png)
+![image-20231105143523783](images/image-20231105143523783.png)
 
 ```
 8 卸载docker
@@ -159,7 +159,7 @@ Server: Docker Engine - Community
 找到自己的阿里云服务器 
 ```
 
-![image-20231105150338080](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105150338080.png)
+![image-20231105150338080](images/image-20231105150338080.png)
 
 ```
 sudo mkdir -p /etc/docker
@@ -176,7 +176,7 @@ sudo systemctl restart docker
 
 ## docker run的运行原理图
 
-![image-20231105151048643](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105151048643.png)
+![image-20231105151048643](images/image-20231105151048643.png)
 
 ## docker 的工作原理
 
@@ -184,7 +184,7 @@ docker 是一个cs架构， client -server
 
 客户端发送指令  服务端通过指令操作镜像和容器
 
-![image-20231105151651413](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105151651413.png)
+![image-20231105151651413](images/image-20231105151651413.png)
 
 宿主机和容器是互相隔离的，所以要做端口映射。
 
@@ -458,7 +458,7 @@ docker run -d --name nginx01 -p 3344:80 nginx   启动一个nginx容器
 -p  3344:80    服务器主机端口3344: 容器内部端口80
 ```
 
-![image-20231105175424817](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105175424817.png)
+![image-20231105175424817](images/image-20231105175424817.png)
 
 ```
 docker exec -it 8fc5c8dac6cf /bin/bash  # 进入容器
@@ -525,7 +525,7 @@ docker的理念是应用和环境都打包成一个镜像。
 
 需求：数据持久化，容器删除了，数据还在。同时容器之间也能共享数据。这就需要一种数据同步，数据贡献的技术。
 
-![image-20231105234402683](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105234402683.png)
+![image-20231105234402683](images/image-20231105234402683.png)
 
 把容器中的文件 和 宿主机中的文件进行映射。 
 
@@ -548,11 +548,11 @@ docker run -it -v /home/ceshi:/home -v /home/config:/etc/nginx/config centos /bi
 docker insepct 8ffcbc0c2974  #查看容器信息
 ```
 
-![image-20231105235139914](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231105235139914.png)
+![image-20231105235139914](images/image-20231105235139914.png)
 
 这时候无论是操作主机home/ceshi 目录， 给目录中增，删，改 还是在容器中，做增，删，改 的操作，都会双向同步
 
-![image-20231106000403310](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106000403310.png)
+![image-20231106000403310](images/image-20231106000403310.png)
 
 **删除容器，不会影响到主机中的数据卷目录**
 
@@ -579,11 +579,11 @@ local     juming-guazai   #具名挂载就是取了一个名字  注意千万不
 docker inspect e68c3cc42f7c  查看nginx02 上的数据卷关系 
 ```
 
-![image-20231106004537822](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106004537822.png)
+![image-20231106004537822](images/image-20231106004537822.png)
 
 **匿名挂载的名字就是这个随机的字符串**
 
-![image-20231106004819673](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106004819673.png)
+![image-20231106004819673](images/image-20231106004819673.png)
 
 ```
 docker 不管是具名还是匿名挂载， 只要不是指定目录名称，docker的数据卷都是存放在   /var/lib/docker/volumes  中的
@@ -602,7 +602,7 @@ docker 不管是具名还是匿名挂载， 只要不是指定目录名称，doc
 
 1.容器之间的数据同步
 
-![image-20231107125331708](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107125331708.png)
+![image-20231107125331708](images/image-20231107125331708.png)
 
 备注:
 
@@ -655,7 +655,7 @@ DockerFile就是通过一段脚本代码，生成镜像。
 
 3345端口怎么访问27017端口中的数据库
 
-![image-20231106224742564](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106224742564.png)
+![image-20231106224742564](images/image-20231106224742564.png)
 
 
 
@@ -748,7 +748,7 @@ docker run -d -p 3344:80 --name music-web-app  -v /home/music_app/nginx/html:/us
 
 ```
 
-![image-20231106152309898](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106152309898.png)
+![image-20231106152309898](images/image-20231106152309898.png)
 
 ## Dockersfile 构建前端项目镜像
 
@@ -788,11 +788,11 @@ server {
 }
 ```
 
-![image-20231107020715586](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107020715586.png)
+![image-20231107020715586](images/image-20231107020715586.png)
 
 2.把dist目录和 上面2个文件都上传到   /home/保存应用的目录
 
-![image-20231107020554950](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107020554950.png)
+![image-20231107020554950](images/image-20231107020554950.png)
 
 3. ```
    docker build -t 镜像名称 .        # . 不能忘记
@@ -819,19 +819,19 @@ server {
 
 （1.） 先到导出数据脚本js文件，其他不选，有坑
 
-![image-20231106185433728](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106185433728.png)
+![image-20231106185433728](images/image-20231106185433728.png)
 
 （2）. 连接上远程数据库，导入脚本文件
 
-![image-20231106185725001](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106185725001.png)
+![image-20231106185725001](images/image-20231106185725001.png)
 
 （3.） docker monfoDB容器中查看数据 一切正常
 
-![image-20231106185854393](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106185854393.png)
+![image-20231106185854393](images/image-20231106185854393.png)
 
 项目运行，查询数据正常
 
-![image-20231106190037573](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231106190037573.png)
+![image-20231106190037573](images/image-20231106190037573.png)
 
 ## docker部署node后台项目
 
@@ -876,5 +876,5 @@ module.exports=config;
 
 7. 项目启动成功，数据正常
 
-   ![image-20231107010208920](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231107010208920.png)
+   ![image-20231107010208920](images/image-20231107010208920.png)
 

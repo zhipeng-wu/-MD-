@@ -73,7 +73,7 @@ console.log(React.createElement("h1",{
 },"hello",React.createElement('span',null,"world")));
 ```
 
-![image-20231118000921883](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231118000921883.png)
+![image-20231118000921883](images/image-20231118000921883.png)
 
 
 
@@ -128,7 +128,7 @@ export function wrapToVdom(element) {
 
 
 
-![image-20231117162249469](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231117162249469.png)
+![image-20231117162249469](images/image-20231117162249469.png)
 
 
 
@@ -145,7 +145,7 @@ export function wrapToVdom(element) {
  
 ```
 
-![image-20231117160200637](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231117160200637.png)
+![image-20231117160200637](images/image-20231117160200637.png)
 
 
 
@@ -243,7 +243,7 @@ function reconcileChildren(children,parentDOM){
 从 React.createElement() -> ReactDOM.render()  #6啊 老哥，接着努力 
 ```
 
-![image-20231118104056810](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231118104056810.png)
+![image-20231118104056810](images/image-20231118104056810.png)
 
 
 
@@ -278,7 +278,7 @@ ReactDOM.render(element,document.getElementById("root"))
 下图 就是 打印的vdom 是FunComponent 函数组件本身的vdom   return 的也是一个vdom
 ```
 
-![image-20231118142026698](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231118142026698.png)
+![image-20231118142026698](images/image-20231118142026698.png)
 
 
 
@@ -340,7 +340,7 @@ function mountFunctionComponent(vdom){
 
 
 
-![image-20231118143025389](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231118143025389.png)
+![image-20231118143025389](images/image-20231118143025389.png)
 
 
 
@@ -363,7 +363,7 @@ ReactDOM.render(element,document.getElementById("root"))
 # 下图是打印的 class组件的 vdom  仔细观察
 ```
 
-![image-20231118154342330](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231118154342330.png)
+![image-20231118154342330](images/image-20231118154342330.png)
 
 ```
 ## 深入源码实现过程
@@ -452,7 +452,7 @@ class Login extends React.Component{
 打印最终需要创建的vdom   console.log(renderVdom);
 ```
 
-![image-20231118160650353](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231118160650353.png)
+![image-20231118160650353](images/image-20231118160650353.png)
 
 
 

@@ -17,11 +17,8 @@
    git reset 哈希值  可以回到指定提交版本的代码
    ```
 
-   
 
- ![image-20231218185119843](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218185119843.png)
-
-
+![image-20231218185119843](images/image-20231218185119843.png)
 
 ## git中文件的状态 
 
@@ -41,7 +38,7 @@ git status  可以查看仓库的状态  如图
 
 
 
-![image-20231218190618504](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218190618504.png)
+![image-20231218190618504](images/image-20231218190618504.png)
 
 
 
@@ -50,7 +47,7 @@ git add demo1.html  就把文件添加到了暂存区
 git status 查看状态
 ```
 
-![image-20231218191452040](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218191452040.png)
+![image-20231218191452040](images/image-20231218191452040.png)
 
 ```javascript
 如果发现代码不对，在还没有提交到本地仓库的时候 ，可以通过
@@ -66,7 +63,7 @@ git commit -m "注释"   把暂存区的文件提交到本地仓库 ，其他新
 git log 可以查看提交日志
 ```
 
-![image-20231218192019363](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218192019363.png)
+![image-20231218192019363](images/image-20231218192019363.png)
 
 ###  版本回退--git reset
 
@@ -82,7 +79,7 @@ git reflog 和 git log --oneline 都可以查看到当前所在版本
 
 
 
-![image-20231218201304000](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218201304000.png)
+![image-20231218201304000](images/image-20231218201304000.png)
 
 
 
@@ -93,7 +90,7 @@ git reflog 和 git log --oneline 都可以查看到当前所在版本
  git diff 文件名    #比较工作区和暂存区的指定文件差异
 ```
 
-![image-20231218202043118](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218202043118.png)
+![image-20231218202043118](images/image-20231218202043118.png)
 
 
 
@@ -111,7 +108,7 @@ git diff 版本id  版本id 文件名 #可以比较2个版本的指定文件差�
 git diff HEAD~ HEAD    比较上一个版本 和 当前版本的差异   HEAD 代表当前最新提交版本    HEAD~ 上一个版本 HEAD^
 ```
 
-![image-20231218202214682](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218202214682.png)
+![image-20231218202214682](images/image-20231218202214682.png)
 
 
 
@@ -160,7 +157,7 @@ git ls-files       #查看暂存区的文件
 
 
 
-![image-20231218171254299](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231218171254299.png)
+![image-20231218171254299](images/image-20231218171254299.png)
 
 
 
@@ -217,7 +214,7 @@ git branch -d 分支名称
 
 + 区别是 merge 会产生额外的一条 commit 提交记录
 
-   ![image-20231219163313124](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219163313124.png)
+   ![image-20231219163313124](images/image-20231219163313124.png)
 
 ```javascript
 如图 master分支有5次提交节点， dev 分支有 2条提交节点。
@@ -235,7 +232,7 @@ git branch -d 分支名称
 
 
 
-![image-20231219144756424](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219144756424.png)
+![image-20231219144756424](images/image-20231219144756424.png)
 
 
 
@@ -257,15 +254,15 @@ dev分支上 多了master2,master3 文件
 
 
 
-![image-20231219153956405](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219153956405.png)
+![image-20231219153956405](images/image-20231219153956405.png)
 
-![image-20231219160539672](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219160539672.png)
+![image-20231219160539672](images/image-20231219160539672.png)
 
 
 
-![image-20231219160953550](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219160953550.png)
+![image-20231219160953550](images/image-20231219160953550.png)
 
-![image-20231219161041965](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219161041965.png)
+![image-20231219161041965](images/image-20231219161041965.png)
 
 
 
@@ -282,7 +279,7 @@ master 分支 多了 dev1.html,dev2.html
 
 
 
-![image-20231219162127424](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219162127424.png)
+![image-20231219162127424](images/image-20231219162127424.png)
 
 
 
@@ -328,8 +325,8 @@ git tag  版本名称  commit哈希值
 
 
 
-![image-20231219170921886](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219170921886.png)
+![image-20231219170921886](images/image-20231219170921886.png)
 
 
 
-![image-20231219170939572](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20231219170939572.png)
+![image-20231219170939572](images/image-20231219170939572.png)
